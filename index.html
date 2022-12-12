@@ -1,19 +1,36 @@
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
             <main class="container">
-            <h1 class="h1-top">Generate a</h1>
-            <h1 class="h1-middle">random password</h1>
-            <h3 class="h3-bottom">Never use an insecure password again.</h3>
-            <button class="button-all button-green" onclick="generatePasswords()">Generate passwords</button>
-            <hr>
-            <br class="button-container">
-                <button class="button-all button-blank" id="button-left"></button></br>
-                <button class="button-all button-blank" id="button-right"></button>
-                <footer>Made by Ranjit Singh Gill</footer>
-            </div>
+                <h1>Generate a <span id="random-password">random password</span></h1>            
+                <h2>Never use an insecure password again</h2>
+                <div>
+                    <h3>Choose Password Options</h3>
+                    <select id="password-option-el" name="password" required>
+                    <option value="" disabled selected hidden>Password Options</option>
+                    <option value="4-digit numeric code">4-digit numeric code</option>
+                    <option value="7-digit alphabetic code">7-digit alphabetic code</option>
+                    <option value="15-digit alphanumeric code">15-digit alphanumeric code</option>
+                    </select>
+                </div>
+                <div>
+                  <button id="btn-generate-password" 
+                          onclick="createPassword()">
+                          Generate Passwords
+                 </button>
+                </div>
+                <hr>
+                <div id="password-container">
+                    <p id="password-one-el"></p>
+                    <p id="password-two-el"></p>
+                    </div><br>
+                <footer>Made by Ranjit Singh Gill<footer>
+            
             </main>
         <script src="index.js"></script>
     </body>

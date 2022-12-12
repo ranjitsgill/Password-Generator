@@ -1,65 +1,103 @@
 body {
+    background-image: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
+    color: white;
+    font-family: 'Patrick Hand', cursive;  
     margin: 0;
-    text-align: left;
 }
 
-.container {
+.container{
+    align-items: center;
     background-color: #1F2937;
-    margin: 20px;
-    padding: 60px 40px;
-    border-radius: 5px;
+    border-radius: 33px;
+    box-shadow: -4px 4px 9px pink;
+    display: flex;
+    flex-direction: column;   
+    margin: 51px;
+    padding: 20px;
 }
 
-.h1-top {
-    color: white;
+h1{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 0px;
 }
 
-.h1-middle {
-    color: #4ADF86;
-    margin-top: -25px;
+h2{
+    margin-top: 0px;
+    text-shadow: -1px 1px red;
 }
 
-.h3-bottom {
+#random-password{
+    color: #10B981;
+}
+
+h3{
+   color: #D5D4D8;
+   font-size: 25px;
+   font-weight: 400;
+   line-height: 28px;
+   margin-top: 10px;
+   margin-bottom: 31px;
+}
+
+#password-option-el{
+    border: 0;
+    border-radius: 6px;
+    background-color: #1C1C1C;    
+    cursor: pointer;
     color: #D5D4D8;
-    margin-top: -10px;
-    margin-bottom: 50px;
+    font-family: 'Patrick Hand', cursive;      
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 4px;
 }
 
-.button-all {
-    padding: 9px 17px;
-    border-radius: 5px;
-    border: none;
-}
-
-.button-green {
-    background-color: #10B981;
-    margin-bottom: 20px;
+#btn-generate-password{
+    background: #10B981;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     color: white;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Patrick Hand', cursive;  
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 31px;
+    padding: 9px 17px 9px 15px;
 }
 
-hr {
-    margin-bottom: 10px;
-    border: none ;
-    height: 1px;
+hr{
+    border: 0.75px solid #2F3E53;
+    height: 0;
+    margin: 35px 0px 25px;;
     width: 100%;
-    background-color: #2F3E53;
 }
 
-.button-blank {
-    background-color: #273549;
-    width: 300px;
-    height: 39px;
-    margin-top: 20px;
+#password-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+p{
     background: #273549;
     border-radius: 6px;
     color: #55F991;
+    font-size: 23px;
+    height: 39px;
+    left: 52px;
+    padding-top: 15px;
+    top: 396px;
+    text-align: center;
+    width: 211px;
 }
 
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    /* width: 100%; */
+#password-one-el{
+    margin-right: 15px;
 }
 
 footer {
